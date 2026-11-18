@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}Tiếng Trung Vanbeijing{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">V</div><div><strong>Tiếng Trung Vanbeijing</strong><span>Bài tập online</span></div></div>
+  {% if user %}
+  <nav class="nav"><a href="/classroom">10 bài học · Điểm và thời gian</a>
+    {% if user.role == 'teacher' %}<a href="/teacher">Dashboard</a><a href="/teacher/students">Học viên</a>{% else %}<a href="/student">Bài tập</a>{% endif %}
+    <a class="userchip" href="/account">{{ user.full_name }}</a>
+    <form action="/logout" method="post"><button class="ghost" type="submit">Đăng xuất</button></form>
+  </nav>
+  {% endif %}
+</header>
+<main class="container">{% block content %}{% endblock %}</main>
+<footer>Tiếng Trung Vanbeijing · Hệ thống bài tập trực tuyến</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

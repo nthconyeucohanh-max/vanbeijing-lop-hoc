@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Bài tập của tôi · Vanbeijing{% endblock %}
+{% block content %}
+<section class="hero small">
+  <div><div class="eyebrow">HỌC VIÊN</div><h1>Xin chào, {{ user.full_name }}</h1><p>Chọn bài để tiếp tục. Hệ thống lưu nháp tự động trong lúc bạn làm bài.</p></div>
+  <div class="stats-inline"><div><strong>{{ totals.done or 0 }}/{{ assignment_count }}</strong><span>đã nộp</span></div><div><strong>{{ totals.seconds|duration }}</strong><span>thời gian học</span></div></div>
+</section>
+{% if request.query_params.get('submitted') %}<div class="alert success">Đã nộp bài thành công.</div>{% endif %}
+<div class="card-grid">
+{% for item in cards %}
+  {% set a=item.assignment %}{% set at=item.attempt %}
+  <article class="assignment-card">
+    <div class="card-top"><span class="tag">{{ a.source }}</span>{% if at and at.status=='submitted' %}<span class="status done">Đã nộp</span>{% elif at %}<span class="status doing">Đang làm</span>{% else %}<span class="status new">Chưa làm</span>{% endif %}</div>
+    <h2>{{ a.title }}</h2><p>{{ a.description }}</p>
+    <div class="meta"><span>⏱ ~{{ a.estimated_minutes }} phút</span>{% if at %}<span>Hoạt động: {{ at.active_seconds|duration }}</span><span>Lần {{ at.attempt_no }}</span><span>{{ item.answered }}/{{ item.total_questions }} câu</span>{% if at.teacher_score is not none %}<span>Điểm: <b>{{ at.teacher_score }}/10</b></span>{% endif %}{% endif %}</div>
+    <div class="card-actions">
+      {% if at and at.status=='submitted' %}<a class="secondary" href="/assignment/{{ a.id }}">Xem bài</a><form action="/assignment/{{ a.id }}/retry" method="post"><button class="primary" type="submit">Làm lại</button></form>
+      {% else %}<a class="primary" href="/assignment/{{ a.id }}">{% if at %}Tiếp tục{% else %}Bắt đầu{% endif %}</a>{% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,2621 @@
+[
+  {
+    "id": "bo-ngu-ket-qua",
+    "title": "Bổ ngữ kết quả",
+    "source": "Bài tập Bổ ngữ Kết quả.pdf",
+    "estimated_minutes": 25,
+    "description": "Sửa lỗi sai, điền bổ ngữ kết quả và luyện dịch đoạn văn.",
+    "sections": [
+      {
+        "id": "sua-loi",
+        "title": "1. Sửa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "r1",
+            "prompt": "我学这本书完了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "r2",
+            "prompt": "昨天在书店我看了我们班的同学卡马拉。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "r3",
+            "prompt": "现在能听老师的话懂了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "r4",
+            "prompt": "我已经做了完今天的作业。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "r5",
+            "prompt": "这个问题我错了回答。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "dien",
+        "title": "2. Điền bổ ngữ kết quả",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "f1",
+            "prompt": "A：老师，这个字我写____了吗？\nB：没有写____，你写____了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "f2",
+            "prompt": "A：妈妈，晚饭做____了吗？\nB：已经做____了。你吃____晚饭有事吗？\nA：我要跟同学去看电影。\nB：今天的作业你做____了没有？\nA：做____了。\nB：做____了没有？\nA：不知道做____没做____。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "f3",
+            "prompt": "衣服你________了没有？",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "f4",
+            "prompt": "作业太多了，我还________。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "doc-dich",
+        "title": "3. Đọc và dịch",
+        "instructions": "Có thể dịch bằng văn viết; giáo viên chấm thủ công.",
+        "questions": [
+          {
+            "id": "t1",
+            "prompt": "昨天下午我和玛丽一起去超市买东西。回到学校的时候，玛丽觉得不舒服，我就跟她一起去医院看病。到了医院，医生问她：“你怎么了？”玛丽说：“我头疼，很不舒服。”医生给她检查了检查说：“你感冒了。烧得很厉害，三十九度五。给你打一针吧。”玛丽说：“不！我不打针。”医生说：“打了针就不发烧了。”玛丽说：“不！你给我一些药吧。我可以吃药，但我不想打针。”最后，医生给了她一些药。晚上玛丽吃了药就睡了。\n\n今天早上，她不发烧了。吃完早饭，她要去教室上课，我说：“你在宿舍休息吧，我给你请假。”她说：“我的感冒已经好了，可以上课了。”到了教室，老师对玛丽说：“玛丽，如果不舒服的话就回宿舍休息吧。”上午，玛丽又有点儿发烧，下了第二节课她就回宿舍了。我对她说：“你最好再去医院看看。”",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch đoạn văn sang tiếng Việt..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo-ngu-xu-huong-kep",
+    "title": "Bổ ngữ xu hướng kép",
+    "source": "Bài tập Bổ ngữ Xu hướng kép.pdf",
+    "estimated_minutes": 25,
+    "description": "Chọn từ, xác định vị trí người nói và sửa lỗi.",
+    "sections": [
+      {
+        "id": "chon-tu",
+        "title": "1. Chọn từ điền vào chỗ trống",
+        "instructions": "Từ cho sẵn: 借回 / 回国去 / 下楼去 / 除了 / 找出来 / 买回来",
+        "questions": [
+          {
+            "id": "c1",
+            "prompt": "玛丽从商店（ ）一辆自行车。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          },
+          {
+            "id": "c2",
+            "prompt": "我看见他跑（ ）了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          },
+          {
+            "id": "c3",
+            "prompt": "我想买一些书包带（ ）。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          },
+          {
+            "id": "c4",
+            "prompt": "她从箱子里（ ）一件毛衣。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          },
+          {
+            "id": "c5",
+            "prompt": "（ ）买书，我还想买一些钢笔。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          },
+          {
+            "id": "c6",
+            "prompt": "从图书馆（ ）一些中文书来。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "借回",
+              "回国去",
+              "下楼去",
+              "除了",
+              "找出来",
+              "买回来"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vi-tri",
+        "title": "2. Chỉ ra người nói đang ở đâu",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l1",
+            "prompt": "你看，他跑过去了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l2",
+            "prompt": "我们走上去吧。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l3",
+            "prompt": "你要的电脑我已经买回来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l4",
+            "prompt": "您的笔我已经给您带上来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l5",
+            "prompt": "他跑进来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l6",
+            "prompt": "我看见他走进博物馆去了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l7",
+            "prompt": "他们一起走出教室去了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l8",
+            "prompt": "他从国外给我带回一件礼物来。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l9",
+            "prompt": "刚下课同学们都跑出学校去了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l10",
+            "prompt": "我看见他走进饭店来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "sua-loi",
+        "title": "3. Sửa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "e1",
+            "prompt": "上课十分钟他才走进来教室。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e2",
+            "prompt": "我看见她走出去图书馆了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e3",
+            "prompt": "汽车开上去山了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e4",
+            "prompt": "他从箱子里拿出去一些衣服。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e5",
+            "prompt": "昨天我朋友回去上海了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cau-so-sanh",
+    "title": "Câu so sánh",
+    "source": "Bài tập câu so sánh.pdf",
+    "estimated_minutes": 35,
+    "description": "Điền từ, hoàn thành câu, sửa lỗi, trả lời thực tế và dịch bài đọc.",
+    "sections": [
+      {
+        "id": "dien1",
+        "title": "1. Điền từ vào chỗ trống",
+        "instructions": "Từ cho sẵn: 气温 / 预报 / 最 / 暖和 / 方便 / 个子 / 地方 / 旧",
+        "questions": [
+          {
+            "id": "a1",
+            "prompt": "他____喜欢看足球比赛。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a2",
+            "prompt": "我们国家的冬天比这儿____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a3",
+            "prompt": "天气预报说，今天最高____是零下一度。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a4",
+            "prompt": "天气____说得不一定对。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a5",
+            "prompt": "A：你哪天比较____，我们见面聊聊天？ B：周末吧，来我家吃饭。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a6",
+            "prompt": "A：这个____的天气怎么样？ B：非常好，夏天一点儿也不热。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a7",
+            "prompt": "我____比他高一点儿。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          },
+          {
+            "id": "a8",
+            "prompt": "这条裤子太____了，再买一条吧。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "气温",
+              "预报",
+              "最",
+              "暖和",
+              "方便",
+              "个子",
+              "地方",
+              "旧"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoan-thanh",
+        "title": "2. Hoàn thành câu so sánh",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "h1",
+            "prompt": "今天的天气比________。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "h2",
+            "prompt": "我做的饭没有________。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "h3",
+            "prompt": "骑自行车________。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "dien2",
+        "title": "3. Điền cụm từ thích hợp",
+        "instructions": "Cụm từ cho sẵn: 冷一点儿 / 大两岁 / 贵得多 / 高得多 / 快得多 / 高三度",
+        "questions": [
+          {
+            "id": "b1",
+            "prompt": "我姐姐比我____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          },
+          {
+            "id": "b2",
+            "prompt": "他比我跑得____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          },
+          {
+            "id": "b3",
+            "prompt": "北京比我那儿____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          },
+          {
+            "id": "b4",
+            "prompt": "这条裙子比那条____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          },
+          {
+            "id": "b5",
+            "prompt": "明天上海的气温比北京____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          },
+          {
+            "id": "b6",
+            "prompt": "今天的温度比昨天____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "冷一点儿",
+              "大两岁",
+              "贵得多",
+              "高得多",
+              "快得多",
+              "高三度"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sua-loi",
+        "title": "4. Chữa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "x1",
+            "prompt": "他们的生活比以前很好。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x2",
+            "prompt": "弟弟比我不高。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x3",
+            "prompt": "麦克比我一点儿高。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x4",
+            "prompt": "他写了汉字跟你一样好。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x5",
+            "prompt": "我们班的学生比他们班一样多。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x6",
+            "prompt": "今天跟昨天冷一样。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x7",
+            "prompt": "我们国家跟中国一样天气。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "x8",
+            "prompt": "我的书包跟他的一样红颜色。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "tra-loi",
+        "title": "5. Trả lời theo tình hình thực tế",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "p1",
+            "prompt": "北京冬天最冷是零下14度，你们国家的冬天比北京冷吗？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "p2",
+            "prompt": "你住的城市东西比中国的便宜吗？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "p3",
+            "prompt": "马克有二百多本中文书，你的中文书比她多吗？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "p4",
+            "prompt": "三三的书包是蓝色的，你的书包跟她的颜色一样吗？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "p5",
+            "prompt": "山本喜欢爬山，你的爱好跟她的一样吗？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "p6",
+            "prompt": "玛丽对中国历史很感兴趣，你呢？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "doc-dich",
+        "title": "6. Đọc và dịch: 逛公园",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "rd",
+            "prompt": "昨天晚上我对罗兰说，听说我们学校西边有一个公园，那个公园很大。公园里有山有水，很漂亮。明天是星期六，我们去公园玩玩儿怎么样？罗兰说，她也正想去公园散散步呢。\n\n我问罗兰怎么去，罗兰说，星期六坐公共汽车的人比较多，我们最好骑自行车去，还可以锻炼身体。\n\n今天早上，我们起得很早，吃了早饭就出发了，半个小时就到公园了。今天逛公园的人真多，买票要排队，我们排了五分钟就买到票。买了票我们就进去了。我和罗兰先爬山，爬了二十多分钟就爬到了山上。因为爬得太快了，我出了一身汗。从山上往下看，非常漂亮。山上有很多树，还有很多花。公园里有一个很大的湖。湖上有一座白色的桥。很多人在湖边散步，还有不少人在湖上划船。罗兰说，这个公园真大、真漂亮。\n\n我和罗兰在山上拍了很多照片。拍完我们就下山了。我们在公园里玩了一个上午，看了很多地方。我对罗兰说，学校离这个公园不太远。可以经常骑车到这儿来玩儿。爬爬山，划划船或者跟朋友一起来散散步，聊聊天。罗兰说，以后我们可以再来。",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Việt..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo-ngu-thoi-luong",
+    "title": "Bổ ngữ thời lượng",
+    "source": "BT Bổ ngữ Thời lượng.pdf",
+    "estimated_minutes": 25,
+    "description": "Trả lời câu hỏi, sửa lỗi và sắp xếp/dịch.",
+    "sections": [
+      {
+        "id": "tra-loi",
+        "title": "1. Trả lời câu hỏi",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "你每天上几个小时课？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "q2",
+            "prompt": "你每天都上网吗？上多长时间？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "q3",
+            "prompt": "你晚上看多长时间电视？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "q4",
+            "prompt": "你学了多长时间汉语了？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "q5",
+            "prompt": "第三本汉语书你学完了吗？你们学到第几课了？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "q6",
+            "prompt": "你在长定县住了多长时间了？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "sua-loi",
+        "title": "2. Sửa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "e1",
+            "prompt": "昨天我看了电视一个小时多。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e2",
+            "prompt": "我哥哥毕业大学已经两年了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e3",
+            "prompt": "他已经没上课三天了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e4",
+            "prompt": "我昨天晚上睡觉了八个小时。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e5",
+            "prompt": "我学习汉语一个年了。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "sap-xep",
+        "title": "3. Sắp xếp và dịch",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "s1",
+            "prompt": "飞机 / 时间 / 了 / 你 / 坐 / 多长 / 的",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s2",
+            "prompt": "今天 / 一个 / 哥哥 / 跑 / 了 / 下午 / 步",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s3",
+            "prompt": "这本书 / 留学生 / 有意思 / 我 / 很 / 觉得 / 对",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s4",
+            "prompt": "Từ đây về nhà tôi rất gần, chỉ cần đi ô tô hơn 1 tiếng là đến.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "s5",
+            "prompt": "Con đã đợi chị nửa ngày rồi nhưng mà chị vẫn chưa về.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo-ngu-trang-thai",
+    "title": "Bổ ngữ trạng thái",
+    "source": "BT Bổ ngữ trạng thái.pdf",
+    "estimated_minutes": 20,
+    "description": "Sửa lỗi sai và sắp xếp câu với 得.",
+    "sections": [
+      {
+        "id": "sua-loi",
+        "title": "1. Sửa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "e1",
+            "prompt": "小明跑步得非常快。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e2",
+            "prompt": "她每天吃饭得很少。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e3",
+            "prompt": "他每天起床得很早。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e4",
+            "prompt": "小月英语说不错。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e5",
+            "prompt": "我明天下午有上课。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "sap-xep",
+        "title": "2. Sắp xếp câu",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "s1",
+            "prompt": "他 / 都 / 早上 / 得 / 起 / 很 / 每天 / 早",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s2",
+            "prompt": "他 / 打篮球 / 好 / 不 / 打 / 好 / 得",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s3",
+            "prompt": "中国 / 小白 / 歌 / 不错 / 得 / 唱 / 很",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s4",
+            "prompt": "得 / 汉字 / 写 / 她 / 很 / 好",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s5",
+            "prompt": "多 / 得 / 喝 / 他 / 不多 / 牛奶 / 昨天",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "s6",
+            "prompt": "汉语 / 得 / 可以 / 他 / 还 / 说",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo-ngu-xu-huong-don",
+    "title": "Bổ ngữ xu hướng đơn",
+    "source": "BT Bổ ngữ xu hướng đơn.pdf",
+    "estimated_minutes": 20,
+    "description": "Xác định vị trí, hoàn thành câu và điền từ.",
+    "sections": [
+      {
+        "id": "vi-tri",
+        "title": "Bài 1. Chỉ ra người nói đang ở đâu",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l1",
+            "prompt": "我妈妈出去买菜了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l2",
+            "prompt": "他从图书馆回来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l3",
+            "prompt": "他回家去了吗？",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l4",
+            "prompt": "外边太冷了，我们进屋里去吧。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l5",
+            "prompt": "我妈妈到我爷爷家来了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "l6",
+            "prompt": "你快上车来！",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "hoan-thanh",
+        "title": "Bài 2. Dùng BNXH đơn hoàn thành câu",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "d1",
+            "prompt": "你怎么会没________？我都在楼下等你半小时了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "d2",
+            "prompt": "已经十点半了，快点儿________，别睡了。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "d3",
+            "prompt": "明天去朋友家，我想________一些水果。",
+            "type": "text",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "dien-tu",
+        "title": "Bài 3. Điền từ thích hợp",
+        "instructions": "Từ cho sẵn: 楼 / 办公室 / 树 / 胖 / 难 / 辆",
+        "questions": [
+          {
+            "id": "w1",
+            "prompt": "这是你的____吗？真大。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          },
+          {
+            "id": "w2",
+            "prompt": "今天的考试一点儿也不____。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          },
+          {
+            "id": "w3",
+            "prompt": "我在505教室上课，我现在要上____去。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          },
+          {
+            "id": "w4",
+            "prompt": "你看，小狗在____下做什么？",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          },
+          {
+            "id": "w5",
+            "prompt": "我想买这____车。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          },
+          {
+            "id": "w6",
+            "prompt": "我太____了，不能吃那么多饭。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "楼",
+              "办公室",
+              "树",
+              "胖",
+              "难",
+              "辆"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "nhiem-vu",
+        "title": "Bài 4. Nhiệm vụ",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "task",
+            "prompt": "Dịch, chép và học thuộc bài khoá Bài 7 + làm bài tập phần mở rộng Bài 7 + chuẩn bị từ mới và bài khoá Bài 8.",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Ghi tình trạng hoàn thành hoặc ghi chú của bạn..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quyen-3-lan-1",
+    "title": "Bài tập Quyển 3 (lần 1)",
+    "source": "BT quyển 3 (lần 1).pdf",
+    "estimated_minutes": 45,
+    "description": "Trắc nghiệm, chọn vị trí, sửa lỗi, sắp xếp và dịch.",
+    "sections": [
+      {
+        "id": "mc",
+        "title": "I. Chọn đáp án đúng",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "m1",
+            "prompt": "他写汉字写得……",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "又快又好",
+              "快好",
+              "很好快",
+              "太快也好"
+            ]
+          },
+          {
+            "id": "m2",
+            "prompt": "他们……，就让他们唱吧。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "唱得那么好听",
+              "那么唱得好听",
+              "那么好听得唱",
+              "好听那么唱得"
+            ]
+          },
+          {
+            "id": "m3",
+            "prompt": "昨天晚上回来得太晚了，我一共……。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "只睡觉两个小时",
+              "两个小时只睡觉",
+              "只两个小时睡觉了",
+              "只睡了两个小时觉"
+            ]
+          },
+          {
+            "id": "m4",
+            "prompt": "我的英语……。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "不说得好",
+              "没说得好",
+              "说得不好",
+              "说得没好"
+            ]
+          },
+          {
+            "id": "m5",
+            "prompt": "每天晚饭以后我都出去……。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "买水果一些",
+              "买一些水果",
+              "买水果一些水果",
+              "一些水果"
+            ]
+          },
+          {
+            "id": "m6",
+            "prompt": "……这儿一直往前走，到红博物馆那儿往左拐。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "在",
+              "离",
+              "从",
+              "到"
+            ]
+          },
+          {
+            "id": "m7",
+            "prompt": "我常……爸爸妈妈打电话，不常发短信。",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "跟",
+              "往",
+              "给",
+              "到"
+            ]
+          },
+          {
+            "id": "m8",
+            "prompt": "他学校西边……超市、公园和书店，还……一个电影院。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Điền đáp án cho 2 chỗ trống..."
+          }
+        ]
+      },
+      {
+        "id": "position",
+        "title": "II. Chọn vị trí thích hợp cho từ trong ngoặc",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "p1",
+            "prompt": "A 同学们 B 写汉字 C 写得 D 很好。（都）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "p2",
+            "prompt": "他 A 说 B 得 C 很好 D。（汉语）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "p3",
+            "prompt": "今天 A 他 B 介绍 C 怎么样 D？（得）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "p4",
+            "prompt": "那本书 A 我 B 看 C 过，写 D 很好。（得）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "p5",
+            "prompt": "你 A 先 B 做完作业 C 看 D 电视吧！（再）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "p6",
+            "prompt": "你 A 在书店买 B 那几本 C 外语 D 书有用吗？（的）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "error",
+        "title": "III. Sửa lỗi sai",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "e1",
+            "prompt": "小明学习很努力，她韩语说不错。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e2",
+            "prompt": "我去图书馆要看书。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e3",
+            "prompt": "他们去中国坐飞机。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e4",
+            "prompt": "我非常感兴趣动物。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e5",
+            "prompt": "你吃麻婆豆腐或者糖醋鱼？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e6",
+            "prompt": "她头疼，发烧，不会来上课。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e7",
+            "prompt": "她参加过比赛两次。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "e8",
+            "prompt": "老师说话得比较快。",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "IV. Sắp xếp câu",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "o1",
+            "prompt": "爸爸 / 离 / 还有 / 生日 / 时间 / 的 / 多长 / ？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o2",
+            "prompt": "篮球 / 什么 / 以外 / 喜欢 / 还 / 除了 / 打 / 球 / 你",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o3",
+            "prompt": "最好 / 告诉 / 你 / 他 / 别",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o4",
+            "prompt": "这双鞋 / 的 / 给 / 爸爸 / 是 / 我 / 买",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o5",
+            "prompt": "烤鸭 / 是 / 菜 / 北京 / 最有名的",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o6",
+            "prompt": "高高的 / 眼睛 / 个子 / 她 / 大大的 / 白白的 / 皮肤",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o7",
+            "prompt": "老人 / 那位 / 107岁 / 已经 / 了",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o8",
+            "prompt": "你 / 青菜 / 想 / 哪种 / 吃",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o9",
+            "prompt": "电话 / 打 / 她 / 过 / 次 / 很多 / 上周",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      },
+      {
+        "id": "zh",
+        "title": "V. Dịch sang tiếng Trung",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "z1",
+            "prompt": "Phía trước nhà tôi là đồng ruộng, không khí rất trong lành.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "z2",
+            "prompt": "Tiểu Minh nói tiếng Trung rất giỏi, viết chữ Hán rất đẹp.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "z3",
+            "prompt": "Đã hơn 8 giờ rưỡi rồi mà Văn Lệ vẫn chưa đến lớp học, cô giáo bảo tôi gọi điện cho cậu ấy.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "z4",
+            "prompt": "Hôm nay tôi đi bệnh viện khám bệnh, bác sĩ nói tôi cần phải uống thuốc cảm cúm, mỗi ngày uống 3 lần, mỗi lần 2 viên, uống thuốc sau khi ăn.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "z5",
+            "prompt": "Bạn có thể mua thẻ nạp hoặc lên mạng để nạp tiền điện thoại.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "z6",
+            "prompt": "Nhà tôi cách thành phố rất xa, giao thông không được thuận tiện.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          }
+        ]
+      },
+      {
+        "id": "vi",
+        "title": "VI. Dịch sang tiếng Việt",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "v1",
+            "prompt": "我病了。头疼，发烧，体温39度，不想吃东西。上午同学们都去上课了，我一个人在宿舍里，很想家，我家离学校很远。我家里人很多，有哥哥，姐姐，还有一个弟弟。在家的时候，我们常一起玩儿。现在，我在中国学习汉语，一个人的时候就常常想他们。\n\n因为不舒服，所以我今天起得很晚。起了床就去医院了。医生给我看病，说我感冒了。给我打了一针，还开了一些药。他说，没关系，吃了药，病就好了。\n\n老师和同学们知道我病了，都来看我。林老师听说我不想吃东西，还给我做了一碗面条。\n\n下午不发烧了，身体也很舒服。我上网给姐姐发微信。我说，我在这儿生活得很好，我们老师也很好，还有很多好朋友，和他们在一起，我感到很快乐。",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Việt..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "on-tap-quyen-3",
+    "title": "Ôn tập Quyển 3",
+    "source": "ÔN TẬP QUYỂN 3.pdf",
+    "estimated_minutes": 55,
+    "description": "Chọn vị trí, chọn từ và sắp xếp/dịch 40 câu.",
+    "sections": [
+      {
+        "id": "position",
+        "title": "I. Chọn vị trí thích hợp",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "a1",
+            "prompt": "你昨天吃A的东西B有C问题D。（了）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a2",
+            "prompt": "我们每天A都B见C面D。（几次）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a3",
+            "prompt": "欧文A长B又高C又帅D。（得）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a4",
+            "prompt": "他的儿子A昨天晚上B吃C三个蛋糕D。（了）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a5",
+            "prompt": "妈妈A让我B给C男朋友D打电话。（不）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a6",
+            "prompt": "坐公交车的时候A没有B公交卡的话，C准备D硬币买票。（得）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a7",
+            "prompt": "她A的日语B说C得D太好。（不）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a8",
+            "prompt": "他笑A对我说B：“不要C担心D”。（着）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a9",
+            "prompt": "他A叫女儿B吃饭的时候C要D看电视。（不）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a10",
+            "prompt": "A公司B同事C我晚上给D他发短信。（让）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a11",
+            "prompt": "他A送B我C一把D特别好的二胡。（给）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a12",
+            "prompt": "麦克告诉我他下个星期就A回B美国C了D。（去）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "id": "a13",
+            "prompt": "这里的夏天A比我的老家B凉快C了D。（多）",
+            "type": "choice",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "word1",
+        "title": "II-A. 选词填空：要 / 想 / 不要 / 不用",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "w1_1",
+            "prompt": "我在北京工作，我很____学习汉语。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_2",
+            "prompt": "上课的时候____跟朋友聊天儿。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_3",
+            "prompt": "我已经给你买了地铁票，现在____买了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_4",
+            "prompt": "我很饿，____吃点儿东西。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_5",
+            "prompt": "已经八点了，我____去教室上课了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_6",
+            "prompt": "天太热了，下午我____去游泳游泳。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_7",
+            "prompt": "我病了，不____吃饭。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          },
+          {
+            "id": "w1_8",
+            "prompt": "____担心，已充值就能打电话了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "要",
+              "想",
+              "不要",
+              "不用"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "word2",
+        "title": "II-B. 会 / 能 / 可以",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "w2_1",
+            "prompt": "他刚从医院回来，医生说不____开车。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_2",
+            "prompt": "孩子一岁多就____自己吃饭了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_3",
+            "prompt": "你____用汉语给中国朋友发微信吗？",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_4",
+            "prompt": "你用手机号码注册微信一下就____了。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_5",
+            "prompt": "要下雨了，我们不____打网球。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_6",
+            "prompt": "小朋友还没回来呢，你____坐在那儿等他一下。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_7",
+            "prompt": "我公司同事不____开车。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          },
+          {
+            "id": "w2_8",
+            "prompt": "我____借一下你的那件衣服吗？",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "会",
+              "能",
+              "可以"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "word3",
+        "title": "II-C. 是 / 在 / 有",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "w3_1",
+            "prompt": "我家旁边____一个邮局。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_2",
+            "prompt": "北京小学对面就____我们公司。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_3",
+            "prompt": "我老家____北方，就____成都城市。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_4",
+            "prompt": "小丽的家附近____一家很大的超市。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_5",
+            "prompt": "泰山____泰安市的旁边。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_6",
+            "prompt": "我的左边____小春，右边____小秋。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_7",
+            "prompt": "我们学校前面____一家饭店，还____一家书店。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          },
+          {
+            "id": "w3_8",
+            "prompt": "我家在城市，前、后、右都____商店。",
+            "type": "select",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời...",
+            "options": [
+              "是",
+              "在",
+              "有"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "title": "III. Sắp xếp và dịch",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "o1",
+            "prompt": "我 的 大家 买 请 奶茶 尝一尝 刚",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o2",
+            "prompt": "在 打电话 的 吗 可以 你 中国 手机？",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o3",
+            "prompt": "应该 拼音 觉得 你 学习 输入法 我",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o4",
+            "prompt": "三天 说 医生 我 针 打 要",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o5",
+            "prompt": "我 请 没 晚会 她 生日 参加",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o6",
+            "prompt": "需要 / 又 / 的 / 好吃 / 又 / 饭店 / 是不是 / 便宜 / 那 / 家 / 预约",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o7",
+            "prompt": "中国 我 给 你 吧 介绍介绍 个 朋友 几",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o8",
+            "prompt": "顿 弟弟 五 每天 都 吃 我 饭",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o9",
+            "prompt": "我们 了 后天 就 考试 要",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o10",
+            "prompt": "漂漂亮亮 我 得 写 汉字 写 妹妹",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o11",
+            "prompt": "去 了 进 教室 同学们 都",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o12",
+            "prompt": "今天 更 天气 说 比 明天 听 会 热 预报",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o13",
+            "prompt": "足球比赛上 赢得 我们 第一名 了 在",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o14",
+            "prompt": "个 是 的 你 球迷 哪 足球队",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o15",
+            "prompt": "的 上海 热 北京 比 天气",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o16",
+            "prompt": "他 一样 跟 大 我",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o17",
+            "prompt": "很 冷 今天 昨天 更 冷 不过 比 昨天",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o18",
+            "prompt": "他 老家 秋天 的 凉快 比较",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o19",
+            "prompt": "结果 他 不想 我 比赛 问",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o20",
+            "prompt": "老师 他 很好 是 的 一位",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o21",
+            "prompt": "告诉 她 能 名字 的 你 我 吗",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o22",
+            "prompt": "汉语 会 说 他 不",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o23",
+            "prompt": "觉得 景色 我 这里 的 美丽 特别",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o24",
+            "prompt": "来 地铁 中国 坐过 没 还 我 以后",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o25",
+            "prompt": "出租车 了 来 你们 吧 坐",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o26",
+            "prompt": "公交车 坐 了 回去 他",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o27",
+            "prompt": "进去 吧 我们 大门 从",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o28",
+            "prompt": "我 想 了 现在 全部 起来 都",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o29",
+            "prompt": "起床 今天 得 她 很早 起",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o30",
+            "prompt": "每天 得 都 她 穿 漂漂亮亮 的",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o31",
+            "prompt": "得 家 你 休息 在 两天",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o32",
+            "prompt": "十分 得 妈妈 做饭 做 好吃",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o33",
+            "prompt": "说 卡马拉 英语 得 说 好 非常",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o34",
+            "prompt": "她 我们 最 努力 在 是 学生 的 班",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o35",
+            "prompt": "尝一尝 这 大家 茶 请 很好喝",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o36",
+            "prompt": "她 胖 很 以前 瘦 了 现在",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o37",
+            "prompt": "老师 她 的 说 汉语 很大 进步",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o38",
+            "prompt": "老师 我们 看 让 这 本书",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o39",
+            "prompt": "老板 叫 你 是不是 打的",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          },
+          {
+            "id": "o40",
+            "prompt": "没有 想 小高 不 今天 吃饭 胃口",
+            "type": "textarea",
+            "manual_grading": true,
+            "placeholder": "Nhập câu trả lời..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dich-viet-trung-q3",
+    "title": "KT Dịch Việt–Trung Quyển 3",
+    "source": "KT Dịch Việt Trung Q3.pdf",
+    "estimated_minutes": 90,
+    "description": "Luyện dịch Việt–Trung theo 10 bài của Quyển 3. Mỗi đoạn được giáo viên chấm thủ công.",
+    "sections": [
+      {
+        "id": "lesson-1",
+        "title": "Bài 1 我家在农村",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l1_1",
+            "prompt": "课文一\nHelen: Tiểu Minh, bạn là người miền Bắc hay miền Nam?\nTiểu Minh: Tớ là người miền Nam, quê tớ ở Tứ Xuyên.\nHelen: Nhà bạn ở thành phố hay nông thôn?\nTiểu Minh: Nhà tớ ở nông thôn.\nHelen: Môi trường (xung quanh) chắc rất OK chứ?\nTiểu Minh: Tất nhiên rồi, phía Bắc nhà tớ là ngọn núi lớn, phía nam là ngọn núi nhỏ, phía đông và phía tây đều là đồng ruộng, không khí trong lành, quang cảnh rất tuyệt.\nHelen: Quả là một nơi tuyệt vời!\nTiểu Minh: Chỉ có điều cách thành phố rất xa, giao thông không tiện cho lắm.\nHelen: Gần nhà bạn có trường học không?\nTiểu Minh: Chỉ có trường tiểu học, không có trường trung học. Tớ đã học trung học ở thành phố.\nHelen: Lần tới đến quê bạn chơi nhé, được không?\nTiểu Minh: Đương nhiên là được rồi, hoan nghênh bạn!",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l1_2",
+            "prompt": "课文二\nOwen: Văn Lệ, bạn thích thành phố hay nông thôn?\nVăn Lệ: Tớ đều thích cả. Owen nhà cậu ở thành phố hay nông thôn?\nOwen: Nhà tớ ở thành phố.\nVăn Lệ: Ở đó chắc rất náo nhiệt đúng không?\nOwen: Rất náo nhiệt. Cạnh nhà tớ đều là cửa hàng.\nVăn Lệ: Có siêu thị và hiệu sách không?\nOwen: Có, bên trái nhà tớ có một siêu thị rất to, còn bên phải có một hiệu sách mới, cách nhà tớ đều rất gần.\nVăn Lệ: Cuộc sống rất tiện lợi.\nOwen: Đúng vậy, mẹ tớ mỗi ngày đều đi siêu thị mua đồ, còn tớ thường xuyên đi đến nhà sách đọc sách.\nVăn Lệ: Giao thông gần nhà bạn như thế nào?\nOwen: Có ga tàu điện ngầm, cũng có trạm xe buýt, vô cùng tiện lợi. Bạn nhìn này, đây chính là ảnh chụp gần nhà tớ.\nVăn Lệ: Đưa tớ xem nào.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l1_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-6.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-2",
+        "title": "Bài 2 一充值就能打电话",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l2_1",
+            "prompt": "课文一\nCao Tiểu Minh: Helen, đây là điện thoại mới của bạn à?\nHelen: Ừ, đây là chiếc điện thoại mà tớ mới mua. Tiểu Minh giới thiệu cho tớ dùng nó như thế nào được không?\nCao Tiểu Minh: Bạn cần mua một chiếc thẻ SIM.\nHelen: Đi đâu mua được?\nCao Tiểu Minh: Chỗ bán điện thoại.\nHelen: Có cần nạp thẻ điện thoại không?\nCao Tiểu Minh: Cần, cứ nạp thẻ là sẽ có thể gọi điện thoại. Bạn có thể nạp thẻ bằng cách mua thẻ nạp, cũng có thể lên mạng nạp.\nHelen: Thẻ nạp bao tiền một thẻ vậy?\nCao Tiểu Minh: Có hai loại 50 tệ và 100 tệ.\nHelen: Tớ không biết nạp thẻ, cậu có thể dạy tớ một lát được không?\nCao Tiểu Minh: Nạp thẻ rất dễ, bạn gọi điện thoại cho Tổng đài, có dịch vụ tiếng nước ngoài nên không phải lo lắng nhé.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l2_2",
+            "prompt": "课文二\nHelen: Owen, cậu dùng Wechat chứ?\nOwen: Đương nhiên, ở Trung Quốc có rất nhiều người đều dùng Wechat.\nHelen: Bạn có thể dạy tớ được không? Tớ vẫn chưa biết dùng Wechat.\nOwen: Được, rất dễ. Cậu nhìn này, tải Wechat trên App Store. Sau đó dùng số điện thoại của cậu đăng ký là được.\nHelen: Tốt quá, ID Wechat của cậu là gì?\nOwen: Đây là số Wechat của tớ. Cậu có biết gửi tin nhắn Wechat bằng tiếng Trung không?\nHelen: Không biết, cậu có thể dạy tớ không?\nOwen: Được, trong điện thoại có kiểu bàn phím viết tay, cũng có bàn phím phiên âm.\nHelen: Vậy loại nào dễ hơn?\nOwen: Đều rất dễ, tớ thấy bạn nên học kiểu bàn phím phiên âm.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-3",
+        "title": "Bài 3 这药每天吃几次？",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l3_1",
+            "prompt": "课文一\nBác sĩ: Đây là lần đầu tiên bạn khám bệnh tại bệnh viện Trung Quốc à?\nĐiền Trung: Không, tháng trước từng đến một lần.\nBác sĩ: Bạn thấy không khoẻ chỗ nào?\nĐiền Trung: Tôi đau đầu và hơi sốt.\nBác sĩ: Gần đây có từng bị ốm không?\nĐiền Trung: Từng bị ốm một lần vào tháng trước.\nBác sĩ: Đo nhiệt độ cơ thể nhé.\nĐiền Trung: Nhiệt độ cơ thể có cao không?\nBác sĩ: 39.5 độ, rất cao.\nĐiền Trung: Có cần phải tiêm không?\nBác sĩ: Cần, mỗi ngày tiêm một lần, tiêm trong 3 ngày.\nĐiền Trung: Cần uống thuốc chứ?\nBác sĩ: Đương nhiên là cần, đây là thuốc cảm, mỗi ngày uống 3 lần.\nĐiền Trung: Bác nói gì cơ? Xin hãy nói lại lần nữa.\nBác sĩ: Đây là thuốc cảm, buổi sáng uống một lần, trưa uống một lần, tối uống một lần.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l3_2",
+            "prompt": "课文二\nHelen: Chào ngài, Bác sĩ!\nĐiền Trung: Xin chào, bạn không khoẻ chỗ nào?\nHelen: Tôi đau bụng, không có cảm giác thèm ăn, không muốn ăn cơm.\nĐiền Trung: Có tiêu chảy không?\nHelen: Có, tối hôm qua tôi đi nhà vệ sinh 4 - 5 lần.\nĐiền Trung: Đồ mà bạn ăn hôm qua có vấn đề gì không?\nHelen: Sữa mà tôi uống hoặc bánh gato mà tôi ăn không được tươi cho lắm.\nĐiền Trung: Vậy uống chút thuốc nhé.\nHelen: Thuốc này mỗi ngày uống mấy lần?\nBác sĩ: Buổi sáng uống một lần, trưa uống một lần, tối uống một lần.\nBác sĩ: Uống thuốc trước hay ăn cơm trước?\nBác sĩ: Uống thuốc trước.\nBác sĩ: Cứ uống thì khỏi luôn phải không? Buổi chiều tôi còn phải lên lớp.\nBác sĩ: Bạn phải nghỉ ngơi ở nhà, uống nhiều nước, không đi lên lớp luôn được.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-4",
+        "title": "Bài 4 我想请你参加生日聚会",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l4_1",
+            "prompt": "课文一\nOwen: Helen, thứ sáu có rảnh không?\nHelen: Ban ngày hay là buổi tối? Buổi tối tớ rảnh.\nOwen: Buổi tối, tớ muốn mời cậu tham gia bữa tiệc sinh nhật của tớ.\nHelen: Cảm ơn cậu, tớ nhất định tham gia. Có nhiều bạn cùng lớp đến dự không?\nOwen: Không đông lắm, rất nhiều bạn học cuối tuần có hẹn, không thể đến tham gia.\nHelen: Kamala là bạn tốt của tớ, tớ có thể dẫn bạn ấy cùng tới không?\nOwen: Đương nhiên được rồi, hoan nghênh các bạn cùng nhau đến.\nHelen: Cậu có mời Cao Tiểu Minh đến tham gia không?\nOwen: Tớ chưa mời cậu ấy, cậu ấy bị ốm nên cần phải nghỉ ngơi. Tớ đã mời Điền Trung tham gia. Các cậu hôm nay sẽ gặp nhau phải không?\nHelen: Đúng, chiều nay chúng tớ sẽ gặp nhau ở lớp học.\nOwen: Bạn bảo cậu ấy ngày mai báo lại tớ xem có tham gia không nhé.\nHelen: Được, tớ nhất định sẽ nói với cậu ấy, bảo cậu ấy gửi tin nhắn cho cậu.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l4_2",
+            "prompt": "课文二\nHelen: Tiểu Minh, bạn bè mời tớ đi ăn rất nhiều lần, lần này tớ muốn mời lại.\nCao Tiểu Minh: Đúng, đây được gọi là có qua có lại.\nHelen: Nghe nói vịt quay Bắc Kinh rất nổi tiếng, tớ muốn mời bạn bè ăn vịt quay. Tiểu Minh, ở đây có quán vịt quay nào không?\nCao Tiểu Minh: Tớ nghĩ đã. Đúng rồi, gần nhà tớ có một quán, vừa ngon vừa rẻ.\nHelen: Vậy chắc là nổi tiếng lắm, có cần đặt trước không?\nCao Tiểu Minh: Tớ cũng không rõ, gọi điện hỏi đi. Cậu định mời mấy bạn khách ăn cơm vậy?\nHelen: Bạn khách mà tớ muốn mời có 2 bạn. Trong đó có một người bạn cậu quen.\nCao Tiểu Minh: Tớ quen bạn khách mà cậu muốn mời?\nHelen: Cậu ấy họ Cao, tên là Cao Tiểu Minh.\nCao Tiểu Minh: Helen, cậu khách sáo quá, chúng ta là bạn lâu năm rồi, lần này AA đi.\nHelen: Tớ không phải khách sáo, đây chẳng phải được gọi là có qua có lại hay sao?",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-5",
+        "title": "Bài 5 现在我有很多中国朋友了",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l5_1",
+            "prompt": "课文一\nHelen: Owen, cậu đã quen với cuộc sống ở Trung Quốc chưa?\nOwen: Tớ cảm thấy vẫn chưa quen lắm.\nHelen: Trước khi đến Trung Quốc, cậu biết đi xe đạp không?\nOwen: Không biết, nhưng đi xe đạp ở đây rất tiện thế nên tớ có nhờ bạn Trung Quốc dạy, bây giờ đã biết đi xe đạp rồi.\nHelen: Lúc mới đến Trung Quốc, cậu biết đi xe buýt như nào không?\nOwen: Không biết, nhưng bây giờ tớ đã biết đi xe buýt rồi, cũng biết đi tàu điện ngầm nữa.\nHelen: Lúc mới đến Trung Quốc cậu biết mua đồ như nào không?\nOwen: Không biết, nhưng bây giờ tớ đã có thể một mình đi siêu thị, cửa hàng mua đồ, cũng đã biết mặc cả.\n\nHelen: Trước khi tới Trung Quốc, cậu có thường xuyên tập thể dục không?\nOwen: Có, tớ mỗi ngày đều chạy bộ. Sau khi đến Trung Quốc, học hành bận rộn, không hay chạy bộ nữa, càng ngày càng béo rồi.\nHelen: Thói quen tốt của cậu không còn nữa thì béo lên, thói quen xấu của tớ không còn nữa thì lại gầy đi.\nOwen: Helen, cậu có thói quen xấu nào vậy?\nHelen: Trước khi đến Trung Quốc, tớ thích nhất là ngủ nướng, bây giờ tớ phải nỗ lực học tập, không thể ngủ nướng nữa.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l5_2",
+            "prompt": "课文二\nOwen: Helen, sau khi đến Trung Quốc, tiếng Trung của cậu có tiến bộ nhiều không?\nHelen: Trước khi đến Trung Quốc, tớ chưa từng học qua tiếng Trung, bây giờ đã biết nói nhiều tiếng Trung hơn.\nOwen: Còn viết thì sao?\nHelen: Lúc mới đến Trung Quốc, tớ không biết viết chữ Hán, bây giờ đã biết viết rất nhiều chữ Hán.\nOwen: Trước đây, cậu có hiểu Trung Quốc không?\nHelen: Không hiểu, sau khi đến Trung Quốc đã từ từ hiểu hơn rồi.\nOwen: Trước khi đến Trung Quốc, cậu có bạn Trung Quốc không?\nHelen: Chỉ có một bạn, bây giờ tớ đã có rất nhiều bạn Trung Quốc. Owen, còn cậu thì sao?\nOwen: Trước đây tớ không có, bây giờ cũng không có. Còn sau này thì? Cậu giới thiệu cho tớ đi!\nHelen: Được, cậu mời tớ uống một bữa cà phê, tớ sẽ giới thiệu cho cậu một người bạn.\nOwen: Vậy thì tớ ngày nào cũng mời cậu uống.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l5_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-20.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-6",
+        "title": "Bài 6 她说汉语说得怎么样？",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l6_1",
+            "prompt": "课文一\nCao Tiểu Minh: Kamala, cậu có bạn cùng phòng chứ, giới thiệu chút bạn cùng phòng của cậu được không?\nKamala: Bạn cùng phòng của tớ là người nước Anh, tên là Helen. Cậu ấy thích hát, hát bài hát tiếng Trung vô cùng hay, còn thích đá bóng nữa nhưng đá không được tốt lắm.\nCao Tiểu Minh: Bạn ấy nói tiếng Trung như thế nào?\nKamala: Nói khá là tốt, cậu ấy còn biết nói một chút tiếng Nhật.\nCao Tiểu Minh: Bạn ấy trông như thế nào?\nKamala: Cậu ấy dáng người cao, mắt to, da trắng, tóc dài và màu vàng, trông vô cùng xinh đẹp.\nCao Tiểu Minh: Bạn ấy bình thường có bận không?\nKamala: Tiểu Minh, cậu hỏi kỹ thế, muốn giới thiệu bạn trai cho cậu ấy à?\nCao Tiểu Minh: Không, tớ muốn giới thiệu cho bạn ấy một người bạn cùng học ngoại ngữ.\nKamala: Thật là trùng hợp, cậu ấy vừa hay đang muốn tìm bạn cùng học ngoại ngữ đấy!",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l6_2",
+            "prompt": "课文二\nHelen: Kamala, sao hôm nay cậu về muộn thế?\nKamala: Tớ đã đi siêu thị.\nHelen: Vừa rồi, một bạn học nam người Trung Quốc đến tìm cậu đó.\nKamala: Bạn ấy trông dáng như nào?\nHelen: Bạn ấy mặc một chiếc áo phông, dáng người thấp, tóc đen, hơi béo, trông khá đẹp trai.\nKamala: Bạn ấy biết nói tiếng Anh không?\nHelen: Bạn ấy nói tiếng Anh rất tốt nhưng nói hơi chậm.\nKamala: Tớ biết rồi, bạn ấy là bạn Trung Quốc của tớ, Cao Tiểu Minh!\nHelen: Bạn ấy biết tên của tớ, còn biết tớ là bạn cùng phòng của cậu.\nKamala: Tớ từng giới thiệu cậu cho bạn ấy, bạn ấy muốn giới thiệu một người bạn cùng học ngoại ngữ cho cậu.\nHelen: Thật không trùng hợp, hôm qua tớ đã tìm được một bạn, cậu nói chậm quá rồi.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l6_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-24.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-7",
+        "title": "Bài 7 公交车过来了，我们山车吧",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l7_1",
+            "prompt": "课文一\nHiện nay nhiều thành phố Trung Quốc đều có tàu điện ngầm. Tiểu Minh, ở đây đi tàu điện như nào?\nBạn năm ngoái đã đến rồi, vẫn chưa từng đi sao?\nVẫn chưa, khi ra ngoài tớ thường gọi taxi.\nBạn có thẻ xe buýt không? Khi vào cần quẹt thẻ đó.\nKhông có thẻ xe buýt làm như nào?\nTrước khi vào cần mua vé. Gần lối vào thường có máy bán vé tự động, hễ bỏ tiền xu vào sẽ xuất vé ra. Lúc vào trong cần quẹt vé.\nLúc ra còn cần quẹt thẻ không?\nVẫn cần quẹt một lần hoặc bỏ vé tàu điện ngầm vào.\nMỗi trạm tàu điện ngầm đều có thang cuốn tự động và thang máy à?\nKhông nhất định, có trạm có có trạm không. Trạm tàu điện gần nhà tớ khi lên có thang cuốn tự động, khi xuống thì không có.\nNgười trẻ thì không vấn đề gì, nhưng người già đi xuống rất mệt nhỉ?\nĐúng thế, người già đi xuống sẽ rất mệt.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l7_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-28.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-8",
+        "title": "Bài 8 我教你汉语，你教我英语",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l8_1",
+            "prompt": "课文一\nOwen: Văn Lệ, có thể tìm cho tớ một gia sư tiếng Trung không, mời bạn ấy dạy tớ tiếng Trung.\nVăn Lệ: Được thôi. Owen cậu chuẩn bị cho bạn ấy bao nhiêu tiền học phí?\nOwen: Tớ dạy bạn ấy tiếng Anh, không đưa học phí cho bạn ấy, bạn ấy cũng không cần cho tớ tiền học phí.\nVăn Lệ: Bạn muốn tìm bạn cùng học ngoại ngữ ư?\nOwen: “Bạn cùng học ngoại ngữ” có nghĩa là gì?\nVăn Lệ: Chính là bạn cùng nhau học tập.\nOwen: Đúng, cậu có thể giới thiệu cho tớ một bạn không?\nVăn Lệ: Cậu có yêu cầu gì không? Nói kỹ một chút.\nOwen: Bạn cùng học ngoại ngữ phải biết nói tiếng Anh, mỗi tuần học 3 buổi.\nVăn Lệ: Cần bạn nam hay bạn nữ?\nOwen: Nam nữ đều được, tiếng phổ thông cần phải nói chuẩn.\nVăn Lệ: Để tớ hỏi bạn học của tớ, ngày mai báo cho cậu kết quả nhé.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l8_2",
+            "prompt": "课文二\nOwen: Tớ muốn tìm một giáo viên dạy tớ kéo đàn nhị, Văn Lệ, cậu có thể giúp tớ tìm một giáo viên không?\nVăn Lệ: Cậu muốn tìm một gia sư đàn nhị sao?\nOwen: Đúng vậy, tớ sẽ có học phí cho gia sư.\nVăn Lệ: Owen, cậu thấy hứng thú với kéo đàn nhị?\nOwen: Ừ, tuần trước tớ đã nghe diễn tấu đàn nhị, cảm thấy rất hay. Học một buổi cần trả khoảng bao nhiêu tiền?\nVăn Lệ: Một tiếng khoảng 300 tệ. Cậu có đàn nhị không?\nOwen: Bạn của tớ đã tặng tớ một chiếc đàn nhị, là món quà sinh nhật của tớ.\nVăn Lệ: Bạn của cậu biết kéo đàn nhị không?\nOwen: Biết, cậu ấy kéo đàn nhị rất hay, nhưng mà cậu ấy làm việc bận quá, không có thời gian dạy tớ.\nVăn Lệ: Tiếc quá vậy, người quen của bố tớ biết kéo đàn nhị, để tớ bảo bố tớ hỏi đã nhé.\nOwen: Đợi tin tốt của bạn.\nVăn Lệ: OK, cứ có tin thì sẽ báo cho cậu.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l8_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-32.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-9",
+        "title": "Bài 9 这里的夏天比我老家热",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l9_1",
+            "prompt": "课文一\nĐiền Trung, thời tiết ở Nhật Bản có giống với ở đây không?\nTương tự như ở đây, mùa hè nóng, mùa đông lạnh, mùa xuân ấm áp, mùa thu mát mẻ.\nMùa đông có tuyết rơi không?\nGiống ở đây, có rất nhiều nơi tuyết rơi. Kamala, thời tiết ở quê bạn như thế nào?\nMùa đông ở quê tớ ấm hơn nơi đây, mùa hè không nóng như này, mùa xuân và mùa thu thì gần giống nơi đây.\nMùa hè nhiệt độ cao nhất là bao nhiêu?\nKhoảng 32 độ, thấp hơn nơi đây rất nhiều.\nNhiệt độ mùa đông thấp nhất là bao nhiêu?\nKhoảng 8 độ, không lạnh như nơi này, cũng không có tuyết rơi.\nMùa đông không lạnh, mùa hè không nóng, quả là một nơi tuyệt vời.\nĐúng thế, dễ chịu hơn nơi đây nhiều.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l9_2",
+            "prompt": "课文二\nTuần này ngày nào cũng đều khoảng 35 độ, thật là nóng! Owen bạn có thấy nóng không?\nNơi đây quá nóng, nóng hơn ở quê tớ rất nhiều.\nNghe dự báo thời tiết nói, ngày mai 36 độ.\nNgày mai nóng hơn hôm nay sao, thật sự không muốn đi ra ngoài nữa. Helen, còn quê bạn như thế nào?\nMùa hè ở quê tớ giống như nơi đây, cũng cực kì nóng.\nNghe nói mùa hạ và mùa thu ở đây thường có bão và mưa lớn.\nNếu có bão, thời tiết sẽ mát dịu hơn nhiều.\nNăm nay khi nào sẽ có bão nhỉ?\nNghe nói năm nay bão đến khá muộn.\nĐến muộn còn hơn là không đến, từ từ đợi đi.\nBão tốt nhất đừng đến. Mà nếu nổi bão, công việc và cuộc sống sẽ đều không dễ dàng gì.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l9_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-36.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      },
+      {
+        "id": "lesson-10",
+        "title": "Bài 10 足球比赛很精彩",
+        "instructions": "",
+        "questions": [
+          {
+            "id": "l10_1",
+            "prompt": "课文一\nMỹ Kinh: Owen, nghe nói cậu là một fan hâm mộ bóng đá, tối nay có thi đấu World Cup, bạn chắc sẽ xem phát sóng trực tiếp nhỉ.\nOwen: Đương nhiên xem rồi, tối nay đội tuyển Hàn Quốc thi với đội tuyển Mỹ, nhất định rất đặc sắc, Mỹ Kinh cậu cũng là fan hâm mộ bóng đá à?\nMỹ Kinh: Đúng thế, tớ giống cậu. Cậu cảm thấy tối nay đội nào sẽ thắng?\nOwen: Tớ thấy thực lực của đội Hàn Quốc không mạnh bằng đội Mỹ, nhất định sẽ thua.\nMỹ Kinh: Tớ thấy kỹ thuật của đội Hàn Quốc tốt hơn đội Mỹ một chút, nhất định sẽ thắng.\nOwen: Ai thắng ai thua, tối nay là biết ngay.\nMỹ Kinh: Nhưng mà tivi phòng tớ tối qua hỏng rồi, không thể xem được nữa.\nOwen: Đến phòng tớ xem đi, hôm nay sẽ có rất nhiều bạn học đến xem, rất náo nhiệt.\nMỹ Kinh: Tớ có thể dẫn bạn Hàn Quốc cùng phòng tới được không?\nOwen: Vô cùng hoan nghênh.\nMỹ Kinh: Vậy tối nay gặp nhé.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l10_2",
+            "prompt": "课文二\nOwen: Cuộc thi sắp kết thúc rồi, mà vẫn 0:0 đều.\nMỹ Kinh: Đội Mỹ tối nay đá rất tốt.\nOwen: Đội Hàn Quốc đá cũng không tệ.\nMỹ Kinh: Đội Hàn Quốc có rất nhiều lần cơ hội nhưng đều không đá vào ngôn được.\nOwen: Đội Mỹ cũng vậy, vận may không tốt.\nMỹ Kinh: Thi đấu căng thẳng quá, đội Hàn Quốc cố lên! Owen cậu đang cổ vũ cho đội Mỹ đúng không?\nOwen: Đương nhiên rồi, tớ là fan hâm mộ của đội tuyển Mỹ.\nMỹ Kinh: Buổi thi đấu hôm nay có phải sẽ là 0:0 không nữa?\nOwen: Xem vận may của ai tốt hơn thôi.",
+            "type": "translation",
+            "manual_grading": true,
+            "placeholder": "Dịch sang tiếng Trung..."
+          },
+          {
+            "id": "l10_image",
+            "prompt": "Bài mở rộng: dựa vào hình trong tài liệu, điền chữ Hán theo pinyin rồi nhập đáp án của bạn bên dưới.",
+            "type": "image_response",
+            "image": "/assets/viet-trung-q3-page-40.png",
+            "manual_grading": true,
+            "placeholder": "Nhập các chữ Hán theo thứ tự..."
+          }
+        ]
+      }
+    ]
+  }
+]

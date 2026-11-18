@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}{{ assignment.title }} · Vanbeijing{% endblock %}
+{% block content %}
+<div class="assignment-head">
+  <div><a class="back" href="/student">← Danh sách bài tập</a><div class="eyebrow">{{ assignment.source }}</div><h1>{{ assignment.title }}</h1><p>{{ assignment.description }}</p></div>
+  <aside><div class="timer-label">Thời gian hoạt động</div><div id="activeTimer" class="timer" data-seconds="{{ attempt.active_seconds or 0 }}">{{ attempt.active_seconds|duration }}</div><small>Lần làm: {{ attempt.attempt_no }}</small></aside>
+</div>
+{% if attempt.status=='submitted' %}<div class="alert info">Bài này đã được nộp. Bạn có thể xem lại câu trả lời hoặc quay về danh sách để chọn “Làm lại”.{% if attempt.teacher_score is not none %}<br><strong>Điểm: {{ attempt.teacher_score }}/10</strong>{% endif %}{% if attempt.teacher_feedback %}<br><strong>Nhận xét:</strong> {{ attempt.teacher_feedback }}{% endif %}</div>{% else %}<div id="saveState" class="save-state">● Đã bật tự động lưu</div>{% endif %}
+<form id="assignmentForm" method="post" action="/assignment/{{ assignment.id }}/submit" class="assignment-form" data-assignment="{{ assignment.id }}" data-submitted="{{ attempt.status=='submitted' }}">
+{% for section in assignment.sections %}
+<section class="question-section">
+  <div class="section-head"><span>{{ loop.index }}</span><div><h2>{{ section.title }}</h2>{% if section.instructions %}<p>{{ section.instructions }}</p>{% endif %}</div></div>
+  {% for qu in section.questions %}
+  <article class="question" id="q-{{ qu.id }}">
+    <div class="qnum">{{ loop.index }}</div>
+    <div class="qbody"><div class="prompt">{{ qu.prompt | replace('\n','<br>') | safe }}</div>
+      {% if qu.type == 'choice' %}
+        <div class="options">{% for op in qu.options %}<label class="option"><input type="radio" name="q__{{ qu.id }}" value="{{ op }}" {% if answers.get(qu.id)==op %}checked{% endif %} {% if attempt.status=='submitted' %}disabled{% endif %}><span>{{ op }}</span></label>{% endfor %}</div>
+      {% elif qu.type == 'select' %}
+        <select name="q__{{ qu.id }}" {% if attempt.status=='submitted' %}disabled{% endif %}><option value="">— Chọn —</option>{% for op in qu.options %}<option value="{{ op }}" {% if answers.get(qu.id)==op %}selected{% endif %}>{{ op }}</option>{% endfor %}</select>
+      {% elif qu.type == 'image_response' %}
+        <img class="source-image" src="{{ qu.image }}" alt="Bài tập trong tài liệu gốc"><textarea name="q__{{ qu.id }}" rows="5" placeholder="{{ qu.placeholder }}" {% if attempt.status=='submitted' %}disabled{% endif %}>{{ answers.get(qu.id,'') }}</textarea>
+      {% elif qu.type in ['textarea','translation'] %}
+        <textarea name="q__{{ qu.id }}" rows="{% if qu.type=='translation' %}9{% else %}4{% endif %}" placeholder="{{ qu.placeholder }}" {% if attempt.status=='submitted' %}disabled{% endif %}>{{ answers.get(qu.id,'') }}</textarea>
+      {% else %}
+        <input type="text" name="q__{{ qu.id }}" value="{{ answers.get(qu.id,'') }}" placeholder="{{ qu.placeholder }}" {% if attempt.status=='submitted' %}disabled{% endif %}>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endfor %}
+{% if attempt.status!='submitted' %}<div class="submit-bar"><div><strong>Kiểm tra lại trước khi nộp</strong><small>Sau khi nộp, giáo viên sẽ nhìn thấy bài và có thể chấm/nhận xét.</small></div><button class="primary big" type="submit" onclick="return confirm('Bạn chắc chắn muốn nộp bài?')">Nộp bài</button></div>{% endif %}
+</form>
+{% endblock %}
+{% block scripts %}<script src="/static/assignment.js"></script>{% endblock %}

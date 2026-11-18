@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Tài khoản · Vanbeijing{% endblock %}
+{% block content %}
+<a class="back" href="/">← Quay lại</a>
+<section class="hero small"><div><div class="eyebrow">TÀI KHOẢN</div><h1>{{ user.full_name }}</h1><p>@{{ user.username }} · {{ 'Giáo viên' if user.role=='teacher' else 'Học viên' }}</p></div></section>
+{% if user.role == 'teacher' %}
+<div class="split"><section class="form-card"><h2>Đổi mật khẩu giáo viên</h2>{% if error %}<div class="alert error">{{ error }}</div>{% endif %}{% if request.query_params.get('changed') %}<div class="alert success">Đã đổi mật khẩu thành công.</div>{% endif %}<form method="post" class="stack"><label>Mật khẩu hiện tại<input type="password" name="current_password" required></label><label>Mật khẩu mới<input type="password" name="new_password" minlength="8" required></label><label>Nhập lại mật khẩu mới<input type="password" name="confirm_password" minlength="8" required></label><button class="primary" type="submit">Đổi mật khẩu</button></form></section><section class="form-card"><h2>Lưu ý bảo mật</h2><p class="muted">Chỉ tài khoản giáo viên dùng mật khẩu. Hãy đổi mật khẩu mặc định sau khi website được đưa lên Internet.</p></section></div>
+{% else %}
+<section class="form-card"><h2>Nick học viên</h2><p>Bạn đang học với nick <strong>{{ user.username }}</strong>.</p><p class="muted">Học viên không cần email hoặc mật khẩu. Khi đăng xuất, hãy dùng đúng nick này để quay lại lịch sử bài làm của mình.</p></section>
+{% endif %}
+{% endblock %}

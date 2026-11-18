@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Chấm bài · {{ attempt.full_name }}{% endblock %}
+{% block content %}
+<a class="back" href="/teacher/student/{{ attempt.user_id }}">← {{ attempt.full_name }}</a>
+<section class="review-head"><div><div class="eyebrow">CHẤM BÀI</div><h1>{{ assignment.title }}</h1><p>{{ attempt.full_name }} · Lần {{ attempt.attempt_no }} · {{ 'Đã nộp' if attempt.status=='submitted' else 'Đang làm' }}</p></div><div class="review-meta"><span><b>{{ attempt.active_seconds|duration }}</b> thời gian hoạt động</span><span><b>{{ attempt.started_at|localtime }}</b> bắt đầu</span>{% if attempt.submitted_at %}<span><b>{{ attempt.submitted_at|localtime }}</b> nộp bài</span>{% endif %}</div></section>
+{% if request.query_params.get('graded') %}<div class="alert success">Đã lưu điểm và nhận xét.</div>{% endif %}
+<div class="review-layout"><div>
+{% for section in assignment.sections %}<section class="question-section"><div class="section-head"><span>{{ loop.index }}</span><div><h2>{{ section.title }}</h2></div></div>{% for qu in section.questions %}<article class="review-q"><div class="qnum">{{ loop.index }}</div><div><div class="prompt">{{ qu.prompt | replace('\n','<br>') | safe }}</div>{% if qu.image %}<img class="source-image" src="{{ qu.image }}">{% endif %}<div class="student-answer">{{ answers.get(qu.id,'— Chưa trả lời —') | replace('\n','<br>') | safe }}</div></div></article>{% endfor %}</section>{% endfor %}
+</div><aside class="grading-panel"><h2>Điểm & nhận xét</h2><form method="post" class="stack"><label>Điểm (thang 10)<input type="number" name="score" step="0.1" min="0" max="10" value="{{ attempt.teacher_score if attempt.teacher_score is not none else '' }}"></label><label>Nhận xét<textarea name="feedback" rows="7" placeholder="Nhận xét cho học viên...">{{ attempt.teacher_feedback or '' }}</textarea></label><button class="primary" type="submit">Lưu chấm bài</button></form>{% if attempt.graded_at %}<small>Chấm gần nhất: {{ attempt.graded_at|localtime }}</small>{% endif %}</aside></div>
+{% endblock %}

@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      VANBEIJING_SECRET_KEY: change-this-to-a-long-random-secret
+      VANBEIJING_DB: /data/vanbeijing.db
+      VANBEIJING_TIMEZONE: Asia/Ho_Chi_Minh
+    volumes:
+      - vanbeijing_data:/data
+volumes:
+  vanbeijing_data:

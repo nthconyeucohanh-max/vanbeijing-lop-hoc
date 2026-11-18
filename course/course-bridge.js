@@ -1,0 +1,21 @@
+(()=>{
+let current=0,ready=false;
+const banner=document.getElementById('sync-banner');
+function status(text,bad=false){banner.textContent=text;banner.className='sync-banner'+(bad?' bad':'');}
+function apply(s){for(let n=1;n<=10;n++){scores[n]=s.progress.filter(p=>p.user_id===s.me.user_id&&p.lesson===n).reduce((a,p)=>a+p.earned,0);document.getElementById('score'+n).textContent=scores[n];}if(!ready){for(const p of s.progress){if(p.user_id!==s.me.user_id)continue;const row=document.querySelector('#lesson'+p.lesson+' [data-question="'+p.question+'"]');if(!row)continue;const input=row.querySelector('input,textarea');if(input)input.value=p.answer||'';}}ready=true;status('Đã kết nối · '+s.me.nickname+' · Điểm và thời gian được lưu vào hồ sơ của bạn.');}
+async function api(body){const r=await fetch('/api/classroom',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const data=await r.json();if(!r.ok)throw Error(data.error||'Chưa lưu được bài làm.');return data;}
+fetch('/api/classroom').then(async r=>{const s=await r.json();if(!r.ok)throw Error(s.error);apply(s)}).catch(e=>status(e.message,true));
+updateScore=function(){};
+async function submit(row,n,answer){if(!ready){status('Chưa kết nối hồ sơ. Hãy tải lại trang trước khi nộp bài.',true);return null;}const buttons=[...row.querySelectorAll('button')];buttons.forEach(b=>b.disabled=true);try{const s=await api({action:'answer',lesson:n,question:row.dataset.question,answer});apply(s);const f=row.querySelector('.feedback');f.className='feedback '+(s.correct?'ok':'bad');f.textContent=s.correct?(s.assisted?'✓ Đúng · đã xem đáp án, không cộng điểm.':'✓ Đúng · kết quả đã lưu.'):'Chưa đúng. Kết quả đã lưu; hãy nghe hoặc đọc lại rồi thử tiếp.';parent.postMessage({type:'classroom-saved'},location.origin);return s;}catch(e){row.querySelector('.feedback').textContent=e.message;status('Chưa lưu được bài làm. Kiểm tra mạng rồi nhấn kiểm tra lại.',true);return null;}finally{buttons.forEach(b=>b.disabled=false)}}
+choose=async function(btn,pick,ans,n){const row=btn.closest('.q');const result=await submit(row,n,String(pick));if(result){row.querySelectorAll('.opt').forEach(x=>x.classList.remove('correct','wrong'));btn.classList.add(result.correct?'correct':'wrong');}};
+checkMeaning=async function(btn,n){const row=btn.closest('.meaning-row'),input=row.querySelector('input');const result=await submit(row,n,input.value);if(result)input.className='meaning-input '+(result.correct?'input-ok':'input-bad');};
+checkDict=async function(btn){const row=btn.closest('.dict-row'),input=row.querySelector('textarea'),n=Number(row.closest('.dictation-section').dataset.lesson);const result=await submit(row,n,input.value);if(result)input.className=result.correct?'input-ok':'input-bad';};
+revealDict=async function(btn){const row=btn.closest('.dict-row'),n=Number(row.closest('.dictation-section').dataset.lesson);btn.disabled=true;try{await api({action:'reveal',lesson:n,question:row.dataset.question});row.querySelector('.dict-answer').hidden=false;row.dataset.revealed='1';}catch(e){status(e.message,true)}finally{btn.disabled=false}};
+const oldOpen=openLesson,oldHome=home;
+openLesson=function(n){current=n;oldOpen(n);parent.postMessage({type:'classroom-lesson',lesson:n},location.origin);};
+home=function(){current=0;oldHome();parent.postMessage({type:'classroom-lesson',lesson:0},location.origin);};
+for(const event of ['pointerdown','keydown','wheel','touchstart'])document.addEventListener(event,()=>parent.postMessage({type:'classroom-active'},location.origin),{passive:true});
+setInterval(()=>{if(!document.hidden&&[...document.querySelectorAll('audio')].some(a=>!a.paused))parent.postMessage({type:'classroom-active'},location.origin);},10000);
+let draftTimer;document.addEventListener('input',e=>{const row=e.target.closest('[data-question]');if(!row||!ready)return;clearTimeout(draftTimer);const n=Number(row.closest('[id^=lesson]').id.replace('lesson',''));draftTimer=setTimeout(()=>api({action:'draft',lesson:n,question:row.dataset.question,answer:e.target.value}).catch(()=>status('Chưa lưu được bản nháp. Hãy kiểm tra kết nối.',true)),700)});
+const initial=Number(new URLSearchParams(location.search).get('lesson'));if(initial>=1&&initial<=10)openLesson(initial);
+})();

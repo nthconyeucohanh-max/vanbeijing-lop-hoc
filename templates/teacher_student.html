@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}{{ student.full_name }} · Vanbeijing{% endblock %}
+{% block content %}
+<a class="back" href="/teacher">← Dashboard</a>
+<section class="student-profile"><div><div class="eyebrow">HỌC VIÊN</div><h1>{{ student.full_name }}</h1><p>Nick: {{ student.username }}</p></div></section>
+<div class="detail-list">
+{% for d in details %}<section class="detail-card"><div><h2>{{ d.assignment.title }}</h2><p>{{ d.assignment.source }}</p></div><div class="attempt-list">{% for at in d.attempts %}<a href="/teacher/review/{{ at.id }}"><span>Lần {{ at.attempt_no }} · {{ 'Đã nộp' if at.status=='submitted' else 'Đang làm' }}</span><span>{{ at.active_seconds|duration }}{% if at.teacher_score is not none %} · {{ at.teacher_score }}/10{% endif %}</span></a>{% else %}<span class="muted">Chưa làm</span>{% endfor %}</div></section>{% endfor %}
+</div>
+{% endblock %}

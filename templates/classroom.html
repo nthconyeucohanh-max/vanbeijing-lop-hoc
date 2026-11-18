@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="eyebrow">MSUTONG · SƠ CẤP 3</div><h1>{{ 'Lớp học của cô Van' if user.role=='teacher' else 'Góc học tập của '+user.full_name }}</h1>
+<p class="muted">10 bài học · Điểm riêng từng bài / 22 · Thời gian chỉ tính khi đang học hoặc nghe trên web.</p>
+{% if user.role=='teacher' %}<p id="roster"></p><p>Học viên nhập nick để tự tạo hồ sơ, tối đa 6 bạn. Nhắc mỗi bạn dùng đúng một nick.</p>{% endif %}
+<div id="result" role="status">Đang tải hồ sơ…</div><div id="history"></div>
+{% endblock %}
+{% block scripts %}<script src="/static/classroom.js"></script><script src="/static/activity.js"></script>{% endblock %}

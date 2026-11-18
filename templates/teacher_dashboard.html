@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard giáo viên · Vanbeijing{% endblock %}
+{% block content %}
+<section class="hero small"><div><div class="eyebrow">GIÁO VIÊN</div><h1>Tổng quan lớp học</h1><p>Theo dõi tiến độ, thời gian hoạt động và bài đã nộp của từng học viên.</p></div><a class="primary" href="/teacher/students">+ Quản lý học viên</a></section>
+<div class="table-card"><div class="table-head"><h2>Tiến độ theo học viên</h2><span>{{ rows|length }} học viên · {{ assignments|length }} bài</span></div>
+<div class="table-scroll"><table><thead><tr><th>Học viên</th><th>Hoàn thành</th><th>Thời gian</th>{% for a in assignments %}<th title="{{ a.title }}">{{ loop.index }}</th>{% endfor %}</tr></thead><tbody>
+{% for row in rows %}<tr><td><a class="student-link" href="/teacher/student/{{ row.student.id }}"><strong>{{ row.student.full_name }}</strong><small>@{{ row.student.username }}</small></a></td><td><b>{{ row.submitted }}/{{ assignments|length }}</b></td><td>{{ row.active_seconds|duration }}</td>
+{% for a in assignments %}{% set at=row.attempts.get(a.id) %}<td>{% if at and at.status=='submitted' %}<a class="dot done" title="Đã nộp - {{ at.active_seconds|duration }}" href="/teacher/review/{{ at.id }}">✓</a>{% elif at %}<a class="dot doing" title="Đang làm - {{ at.active_seconds|duration }}" href="/teacher/review/{{ at.id }}">•</a>{% else %}<span class="dot empty">–</span>{% endif %}</td>{% endfor %}</tr>{% endfor %}
+</tbody></table></div></div>
+<div class="table-card"><div class="table-head"><h2>Hoạt động gần đây</h2></div><div class="recent-list">{% for r in recent %}<a href="/teacher/review/{{ r.id }}"><span><strong>{{ r.full_name }}</strong><small>{{ assignment_titles.get(r.assignment_id, r.assignment_id) }}</small></span><span><b>{{ 'Đã nộp' if r.status=='submitted' else 'Đang làm' }}</b><small>{{ r.active_seconds|duration }}</small></span></a>{% else %}<p class="muted">Chưa có hoạt động.</p>{% endfor %}</div></div>
+<div class="legend"><span><i class="dot done">✓</i> Đã nộp</span><span><i class="dot doing">•</i> Đang làm</span><span><i class="dot empty">–</i> Chưa làm</span></div>
+{% endblock %}

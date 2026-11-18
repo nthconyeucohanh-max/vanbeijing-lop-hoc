@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Đăng nhập · Vanbeijing{% endblock %}
+{% block content %}
+<section class="login-wrap">
+  <div class="login-card">
+    <div class="eyebrow">TIẾNG TRUNG VANBEIJING</div>
+    <h1>Vào làm bài</h1>
+    <p class="muted">Học viên chỉ cần nhập Tên/Nick. Không cần email, không cần mật khẩu.</p>
+    {% if error %}<div class="alert error">{{ error }}</div>{% endif %}
+    <form method="post" action="/login" class="stack" id="student-login-form">
+      <label>Tên/Nick học viên<input id="student-nickname" name="nickname" autocomplete="nickname" minlength="2" maxlength="40" placeholder="Ví dụ: Trà My" required></label>
+      <button class="primary big" type="submit">Vào làm bài</button>
+    </form>
+    <p class="muted" style="margin-top:12px">Lần đầu dùng nick này, hệ thống sẽ tự tạo hồ sơ. Lần sau máy sẽ nhớ sẵn nick của bạn.</p>
+  </div>
+  <div class="login-side">
+    <div class="feature"><b>01</b><span><strong>Không cần email</strong><small>Chỉ nhập tên hoặc nick quen dùng.</small></span></div>
+    <div class="feature"><b>02</b><span><strong>Tự nhớ nick</strong><small>Trình duyệt lưu nick để lần sau vào nhanh hơn.</small></span></div>
+    <div class="feature"><b>03</b><span><strong>Giáo viên theo dõi</strong><small>Mỗi nick có tiến độ, thời gian và bài nộp riêng.</small></span></div>
+    <details class="teacher-login-box" {% if teacher_error %}open{% endif %}>
+      <summary>Đăng nhập dành cho giáo viên</summary>
+      {% if teacher_error %}<div class="alert error">{{ teacher_error }}</div>{% endif %}
+      <form method="post" action="/teacher-login" class="stack" style="margin-top:12px">
+        <label>Tài khoản giáo viên<input name="username" value="Van" autocomplete="username" required></label>
+        <label>Mật khẩu<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="secondary" type="submit">Đăng nhập giáo viên</button>
+      </form>
+    </details>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function(){
+  const input=document.getElementById('student-nickname');
+  const form=document.getElementById('student-login-form');
+  let saved='';try{saved=localStorage.getItem('vanbeijing_nickname')}catch(e){};
+  if(saved && input){ input.value=saved; }
+  if(form){ form.addEventListener('submit',()=>{ const v=input.value.trim(); if(v)try{localStorage.setItem('vanbeijing_nickname',v)}catch(e){}; }); }
+})();
+</script>
+{% endblock %}
