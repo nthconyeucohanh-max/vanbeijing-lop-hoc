@@ -30,7 +30,7 @@ def install(app):
  async def csrf(request,call_next):
   if request.method=='POST':
    origin=request.headers.get('origin')
-   if origin and origin.rstrip('/')!=str(request.base_url).rstrip('/'):
+   if origin and origin not in {str(request.base_url).rstrip('/'), 'https://vanbeijing-web-production.up.railway.app'}:
     from fastapi.responses import JSONResponse
     return JSONResponse({'error':'Nguồn yêu cầu không hợp lệ'},403)
   return await call_next(request)
