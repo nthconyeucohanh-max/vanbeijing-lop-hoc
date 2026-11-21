@@ -1,7 +1,7 @@
-# Tiếng Trung Vanbeijing — lớp 6 học viên
+# Tiếng Trung Vanbeijing — lớp 8 học viên
 
 - Học viên nhập Tên/Nick, không email và không mật khẩu.
-- Nick mới tự tạo hồ sơ, tối đa 6 học viên; nick cũ mở lại đúng hồ sơ.
+- Nick mới tự tạo hồ sơ, tối đa 8 học viên; nick cũ mở lại đúng hồ sơ.
 - Trình duyệt nhớ nick. Đổi máy cần nhập lại đúng nick.
 - Giáo viên: tên đăng nhập `Van`, mật khẩu khởi tạo `Van` (đặt VANBEIJING_TEACHER_PASSWORD=Van khi triển khai).
 - /classroom: điểm riêng 10 bài, tiến độ, thời gian từng bài và tổng thời gian; giáo viên xem lịch sử bài làm.

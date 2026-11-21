@@ -9,7 +9,7 @@ assert c.post('/teacher-login',data={'username':'Van','password':'wrong'}).statu
 assert c.post('/teacher-login',data={'username':'Van','password':'Van'}).status_code==200
 assert c.get('/api/classroom').json()['me']['role']=='teacher'
 c.post('/logout')
-for i in range(6):
+for i in range(8):
  assert c.post('/login',data={'nickname':'Hoc vien '+str(i)}).status_code==200
  if i==0:
   uid=c.get('/api/classroom').json()['me']['user_id']
@@ -19,7 +19,7 @@ for i in range(6):
   assert c.get('/teacher').status_code==403
  else: assert c.get('/api/classroom').json()['progress']==[]
  c.post('/logout')
-assert c.post('/login',data={'nickname':'Seventh'}).status_code==400
+assert c.post('/login',data={'nickname':'Ninth'}).status_code==400
 assert c.post('/login',data={'nickname':'  Hoc   vien 0 '}).status_code==200
 assert c.get('/api/classroom').json()['me']['user_id']==uid
 assert c.get('/api/classroom?history='+str(uid+1)).status_code==403
@@ -33,4 +33,4 @@ with db() as conn:conn.execute('UPDATE course_clock SET last_at=last_at-15')
 c.post('/api/classroom',json={'action':'heartbeat','lesson':1,'tabId':'a'})
 assert sum(x['seconds'] for x in c.get('/api/classroom').json()['activity'])==15
 assert c.post('/login',data={'nickname':'X'},headers={'origin':'https://evil.example'}).status_code==403
-print('PASS: teacher password, reserved nick, 6 students, profile reuse, isolation, 20 whole dictations, score deduplication, time and CSRF')
+print('PASS: teacher password, reserved nick, 8 students, profile reuse, isolation, 20 whole dictations, score deduplication, time and CSRF')

@@ -1,7 +1,7 @@
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const duration=s=>Math.floor(s/3600)+' giờ '+Math.floor(s%3600/60)+' phút '+s%60+' giây';
 fetch('/api/classroom').then(r=>{if(!r.ok)throw Error();return r.json()}).then(s=>{
- const teacher=s.me.role==='teacher';if(teacher)document.getElementById('roster').textContent=s.users.length+'/6 học viên đã có hồ sơ';
+ const teacher=s.me.role==='teacher';if(teacher)document.getElementById('roster').textContent=s.users.length+'/8 học viên đã có hồ sơ';
  document.getElementById('result').innerHTML=s.users.map(u=>{
  const p=s.progress.filter(x=>x.user_id===u.user_id),a=s.activity.filter(x=>x.user_id===u.user_id);
  return `<section class="card" style="padding:24px;margin:20px 0"><h2>${esc(u.nickname)}</h2><p>Tổng thời gian: <b>${duration(a.reduce((v,x)=>v+x.seconds,0))}</b></p><div style="overflow:auto"><table style="width:100%;min-width:560px"><thead><tr><th>Bài</th><th>Điểm</th><th>Đã làm</th><th>Thời gian</th><th></th></tr></thead><tbody>${Array.from({length:10},(_,i)=>{const n=i+1,pp=p.filter(x=>x.lesson===n);return `<tr><td>Bài ${n}</td><td><b>${pp.reduce((v,x)=>v+x.earned,0)} / 22</b></td><td>${pp.filter(x=>x.tries>0).length} / 22 câu</td><td>${duration(a.filter(x=>x.lesson===n).reduce((v,x)=>v+x.seconds,0))}</td><td><a href="/learn?lesson=${n}">${teacher?'Xem bài':'Vào học'}</a></td></tr>`}).join('')}</tbody></table></div>${teacher?`<p><button class="secondary" onclick="historyFor(${u.user_id})">Xem bài làm và lịch sử</button></p>`:''}</section>`;

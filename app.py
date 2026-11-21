@@ -97,8 +97,10 @@ def init_db():
         salt,digest=hash_password(pwd)
         conn.execute("INSERT INTO users(username,full_name,role,password_salt,password_hash,created_at) VALUES('Van','Cô Van','teacher',?,?,?)",(salt,digest,now_iso()))
     conn.executescript("""
-    CREATE TRIGGER IF NOT EXISTS six_students BEFORE INSERT ON users
-    WHEN NEW.role='student' AND (SELECT count(*) FROM users WHERE role='student')>=6
+    BEGIN IMMEDIATE;
+    DROP TRIGGER IF EXISTS six_students;
+    CREATE TRIGGER IF NOT EXISTS eight_students BEFORE INSERT ON users
+    WHEN NEW.role='student' AND (SELECT count(*) FROM users WHERE role='student')>=8
     BEGIN SELECT RAISE(ABORT,'class_full'); END;
     """)
     conn.commit(); conn.close()
@@ -189,7 +191,7 @@ def student_login(request: Request, nickname: str=Form(...)):
             row=conn.execute('SELECT * FROM users WHERE username=? COLLATE NOCASE',(nickname,)).fetchone()
             if not row:
                 conn.close()
-                return templates.TemplateResponse(request,'login.html',{'error':'Lớp đã đủ 6 học viên. Hãy nhập đúng nick đã dùng hoặc liên hệ cô giáo.','teacher_error':None},status_code=400)
+                return templates.TemplateResponse(request,'login.html',{'error':'Lớp đã đủ 8 học viên. Hãy nhập đúng nick đã dùng hoặc liên hệ cô giáo.','teacher_error':None},status_code=400)
     conn.close()
     request.session.clear()
     request.session['user_id']=row['id']
